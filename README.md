@@ -25,8 +25,8 @@ da tabela de usuário no banco de dados, assim tornando facil a invasão.
   
 ## Estrutura do codigo
 
-      A estrutura do codigo não é muito favorável e não é comumente usado, como por 
-    exemplo o modo que é lançado as informações para o banco de dados sendo bem incomum.
+  A estrutura do codigo não é muito favorável e não é comumente usado, como por 
+exemplo o modo que é lançado as informações para o banco de dados sendo bem incomum.
 
 ## Conexão Banco de dados
 
