@@ -10,7 +10,7 @@ consegui encontrar.
 ## Exceções
 
 O codigo faz o uso de exceções porem não descreve qual o tipo de exceção assim
-tornando dificil, caso ocorra algum tipo de erro ter noção do que ocorreu.
+tornando dificil, caso ocorra algum tipo de erro é dificil ter noção do que ocorreu.
   
   ![image](https://github.com/GabrielSichoski/CaixaBranca/assets/104863390/b240ee9c-0803-4d5a-9b71-7babbe853a10)
 
