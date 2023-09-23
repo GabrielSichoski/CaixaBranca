@@ -8,6 +8,7 @@ Introdução
 Exceções
   O codigo faz o uso de exceções porem não descreve qual o tipo de exceção assim
   tornando dificil, caso ocorra algum tipo de erro ter noção do que ocorreu.
+  
   ![image](https://github.com/GabrielSichoski/CaixaBranca/assets/104863390/b240ee9c-0803-4d5a-9b71-7babbe853a10)
 
 Segurança banco de dados
@@ -15,6 +16,7 @@ Segurança banco de dados
   o valor '1' = '1' na campo te login ele não terá a acesso ao login, porem
   como '1' = '1' é sempre verdadeiro o invasor pode ter acesso a todas as linhas
   da tabela de usuário no banco de dados, assim tornando facil a invasão.
+  
   ![image](https://github.com/GabrielSichoski/CaixaBranca/assets/104863390/35388633-b07e-4d48-a6a1-0af1e5e4864e)
   
 Estrutura do codigo
