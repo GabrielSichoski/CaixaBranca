@@ -34,6 +34,13 @@ Aparentemente o codigo não mostra a conexão com o banco de dados sendo fechado
 o que poderia ser feito é usar "null" nas informações/variaveis rs, st e conn. Além
 do uso de variaveis publicas sendo praticamente o codigo inteiro de classes e variaveis publicas.
 
+## Principios SOLID
+
+O codigo não segue os principios solid não seguindo praticamente nenhum principio, claro que alguns 
+principios precisaria de outras classes para ter noções melhores porém ele não viola os principios SRP
+além de ser codigo de dificil mudança precisando mudar as classes sendo assim não seguindo o segundo principio
+o OCP.
+
 ## Conclusão
 
 Minha conclusão sobre o codigo é ele vai funcionar porém esses erros torna perigoso
