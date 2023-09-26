@@ -37,7 +37,7 @@ do uso de variaveis publicas sendo praticamente o codigo inteiro de classes e va
 ## Principios SOLID
 
 O codigo não segue os principios solid não seguindo praticamente nenhum principio, claro que alguns 
-principios precisaria de outras classes para ter noções melhores porém ele não viola os principios SRP
+principios precisaria de outras classes para ter noções melhores porém ele viola os principios SRP
 além de ser codigo de dificil mudança precisando mudar as classes sendo assim não seguindo o segundo principio
 o OCP.
 
