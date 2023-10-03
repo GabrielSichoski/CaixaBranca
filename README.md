@@ -44,6 +44,19 @@
 
 ![image](https://github.com/GabrielSichoski/CaixaBranca/assets/104863390/b6c19e87-a5bf-4ff1-ab24-09c548c2a1bf)
 
+## Complexidade ciclomatica
+
+A complexidade ciclomatica é feito para calcular os caminhos
+o calculo é feito por 
+
+ arestas - nós = x
+
+ x + 2 = resultado de caminhos
+
+ Nesse caso são 26 arestas e 24 nós
+
+ 26 - 24 = 2
+
 
 ## Caminhos
 
@@ -70,19 +83,3 @@ Caminho 4:
 
 Caminho ocorre a caso não encontre o usuario
 
-## Complexidade ciclomatica
-
-A complexidade ciclomatica é feito para calcular os caminhos
-o calculo é feito por 
-
- arestas - nós = x
-
- x + 2 = resultado de caminhos
-
- Nesse caso são 26 arestas e 24 nós
-
- 26 - 24 = 2
-
- 2+2 = 4 
-
- 4 caminhos 
