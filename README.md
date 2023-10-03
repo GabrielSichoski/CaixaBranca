@@ -41,3 +41,31 @@
     24.		
 
 ## grafo de fluxo
+
+![image](https://github.com/GabrielSichoski/CaixaBranca/assets/104863390/b6c19e87-a5bf-4ff1-ab24-09c548c2a1bf)
+
+
+## Caminhos
+
+Caminho 1:
+1-2-3-4-5-6-7-10-11-12-13-14-15-16-17-18-19-20-23-24
+
+Neste caminho todas as conexões e pontos dão certo
+
+Caminho 2:
+
+1-2-3-4-5-8-9-10-11-12-13-14-15-16-17-18-19-20-23-24
+
+Neste caminho conectarBD ocorre a excessão e verificar usuario funciona
+
+Caminho 3:
+
+1-2-3-4-5-6-7-10-11-12-13-14-15-21-22-23-24
+
+Neste caminho ocorre a excecão em verificarUsuario
+
+Caminho 4:
+
+1-2-3-4-5-8-9-10-11-12-13-14-15-16-20-23-24
+
+Caminho ocorre a caso não encontre o usuario
