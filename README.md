@@ -1,52 +1,43 @@
 # CaixaBranca
 
-## Introdução
+## Codigo
 
-Com o intuito de estudar qualidade de teste de software, foi proposto pelo professor
-Daniel Ohata a análise de um codigo afim de encontrar erros seja no funcionamento
-ou no modo que o codigo esta ambientando, sendo assim listei os erros que eu
-consegui encontrar.
 
-## Exceções
+    1.package login; 
+    
+    1.import java.sql.Connection;
+    1.import java.sql.DriverManager;
+    1.import java.sql.ResultSet;
+    1.import java.sql.Statment;
+    
+    2.public class User{
+        3.public Connection conectarBD(){
+            4.	Connection conn = null;
+            5.try{
+               6. Class.forName("com.mysql.Driver.Manager").newInstance();
+                6.String url = "jdbc:mysql://127.0.0.1/test?user=lopes&password=123";
+                6. conn = DriverManager.getConnection(url);
+            7.}  8. catch 9. (Exception e) { } 
+           10. return conn; 
+    11.}
+    12.public String nome= "";
+    12.public boolean result = false;
+    13. public boolean verificarUsuario (String login, String senha){
+        14. String sql = "";
+        14.Connection conn = conectarBD();
+    
+        14. sql += "select nome from usuarios";
+        14. sql += "where login = " + "'" + login + "'";
+        14. sql += "and senha = " + "'" + senha + "';";
+        15 .try{		
+            16. Statment st = conn.createStatement();
+            16. ResultSet rs = st.executeQuery(sql);
+            17. if (rs.next()){
+                18.result = true;
+                18. nome = rs.getString("nome");
+    19.}
+        20.} 21.catch  22.(Exception e) { }
+        23. return result;}
+    24.		
 
-O codigo faz o uso de exceções porem não descreve qual o tipo de exceção assim
-tornando dificil, caso ocorra algum tipo de erro é dificil ter noção do que ocorreu.
-  
-  ![image](https://github.com/GabrielSichoski/CaixaBranca/assets/104863390/b240ee9c-0803-4d5a-9b71-7babbe853a10)
-
-## Segurança banco de dados
-
-O banco de dados não está seguro tendo em vista que caso algum invasor insira
-o valor '1' = '1' na campo te login ele não terá a acesso ao login, porem
-como '1' = '1' é sempre verdadeiro o invasor pode ter acesso a todas as linhas
-da tabela de usuário no banco de dados, assim tornando facil a invasão.
-  
-  ![image](https://github.com/GabrielSichoski/CaixaBranca/assets/104863390/35388633-b07e-4d48-a6a1-0af1e5e4864e)
-  
-## Estrutura do codigo
-
-  A estrutura do codigo não é muito favorável e não é comumente usado, como por 
-exemplo o modo que é lançado as informações para o banco de dados sendo bem incomum.
-
-## Conexão Banco de dados
-
-Aparentemente o codigo não mostra a conexão com o banco de dados sendo fechado,
-o que poderia ser feito é usar "null" nas informações/variaveis rs, st e conn. Além
-do uso de variaveis publicas sendo praticamente o codigo inteiro de classes e variaveis publicas.
-
-## Principios SOLID
-
-O codigo não segue os principios solid não seguindo praticamente nenhum principio, claro que alguns 
-principios precisaria de outras classes para ter noções melhores porém ele viola os principios SRP
-além de ser codigo de dificil mudança precisando mudar as classes sendo assim não seguindo o segundo principio
-o OCP.
-
-## Conclusão
-
-Minha conclusão sobre o codigo é ele vai funcionar porém esses erros torna perigoso
-o uso do mesmo, caso o usuário use de forma comum ele funciona, mas caso alguém
-má intencionado tente usar o codigo ele pode causar grandes prejuízo. Neste caso 
-será necessário algumas mudanças, na conexão com o banco de dados, no envio das informações
-para o banco de dados, na estrutura do codigo, e definir melhor as execeções para caso
-de alguma forma não conectar com o banco de dados seja avisado
-
+## grafo de fluxo
