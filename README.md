@@ -73,11 +73,17 @@ Caminho ocorre a caso não encontre o usuario
 ## Complexidade ciclomatica
 
 A complexidade ciclomatica é feito para calcular os caminhos
+
 o calculo é feito por :
+
 arestas - nós = x
+
 x + 2 = resultado de caminhos
 
 Nesse caso são 26 arestas e 24 nós
+
 26 - 24 = 2
+
 2+2 = 4 
+
 4 caminhos 
