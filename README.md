@@ -56,8 +56,11 @@ o calculo é feito por
  Nesse caso são 26 arestas e 24 nós
 
  26 - 24 = 2
+ 
  2 + 2 = 4
+ 
  4 caminhos
+ 
 ## Caminhos
 
 Caminho 1:
